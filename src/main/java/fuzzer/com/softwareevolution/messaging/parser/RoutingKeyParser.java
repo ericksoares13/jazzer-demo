@@ -2,10 +2,6 @@ package fuzzer.com.softwareevolution.messaging.parser;
 
 /**
  * Componente responsável por interpretar identificadores de roteamento.
- * <p>
- * Contexto de Evolução: Este código foi identificado como um ponto de risco
- * técnico. A implementação atual foca em desempenho usando split(), mas carece
- * de validação robusta contra malformações sutis (dívida técnica).
  */
 public class RoutingKeyParser {
 

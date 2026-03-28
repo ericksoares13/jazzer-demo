@@ -20,6 +20,7 @@ public class RoutingKeyParserFuzzTest {
 		final boolean result = RoutingKeyParser.isValid(fuzzedInput);
 
 		// Assert
+		// Função split() padrão do Java descarta o último segmento se ele for vazio.
 		Assertions.assertEquals(expected, result, String.format("Entrada do fuzzer: '%s'", fuzzedInput));
 	}
 }
